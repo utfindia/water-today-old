@@ -75,7 +75,9 @@
       <link rel="stylesheet" media="screen" href="https://utradefair.in/assets/jquery.rateyo.min-36726dec6ef4f25e664004cdbde4b6a61ff4b66ce419cda5ddad5db5b4d7123d.css" />
       <script src="https://utradefair.in/assets/modernizr-0639fa2d7aeaa33ec9ab7785fb3fc857009d3a98901e9872d20f9b3539bd196b.js"></script>
       <script src="https://utradefair.in/assets/jquery-52994097ed61a4f07ba7d1c94452f0b05592cf2eb7ed05ef88637cecc50e9199.js"></script>
-      <script src="https://utradefair.in/assets/xzoom.min-6ea9f4ea4367d65d128669e2930017d5a6d83f38b18212065babfcac5550bae9.js"></script>
+
+      <!-- <script src="https://utradefair.in/assets/xzoom.min-6ea9f4ea4367d65d128669e2930017d5a6d83f38b18212065babfcac5550bae9.js"></script>-->
+
       <script src="https://utradefair.in/assets/jquery.hammer.min-29265b5788cb1becd9b419ddddbd8e890a37b5a0d1ab0d6114c713fa86a8a53d.js"></script>
       <script src="https://utradefair.in/assets/jquery.fancybox-274d0a41af06891a03191bbb3f17627c317b5a01fb25fbf630e3cab55755cc41.js"></script>
       <script src="https://utradefair.in/assets/magnific-popup-48cfaae3c6b1ea7d83db03af7127f40e0335dc1019ef7e3139b38d1152519da7.js"></script>
@@ -247,13 +249,16 @@
   display:block;
 }
 
-.xzoom-container img {
-  transition: all ease .02s;
+.xzoom-container img, .xzoom-gallery img {
+  -webkit-transition: all ease .04s;
+
 }
 
-.xzoom-container img:hover  {
+.xzoom-container img:hover, .xzoom-gallery img:hover  {
   transform: scale(1.2);
 }
+
+
 
 
 </style>
@@ -307,7 +312,7 @@
               <div class="xzoom-container">
                 <img class="xzoom xzoom-default" xoriginal="" src="images/wastewater.jpg" alt="Utf" />
                 <div class="xzoom-thumbs ">
-                  <a href="javascript:void(0);"><img class="xzoom-gallery" width="80" src="images/wastewater.jpg"  xpreview="" ></a>
+                  <a href="javascript:void(0);"><img class="xzoom-gallery"  src="images/wastewater.jpg"  xpreview="" ></a>
                 </div>
               </div>
             </div>
