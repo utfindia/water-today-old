@@ -26,6 +26,8 @@
   }
 </script>
 <!-- End Google Tag Manager -->
+
+
 </head>
 <body>
 
@@ -243,6 +245,14 @@
   text-align: center;
   margin: 0px auto;
   display:block;
+}
+
+.xzoom-container img {
+  transition: all ease .02s;
+}
+
+.xzoom-container img:hover  {
+  transform: scale(1.2);
 }
 
 
@@ -675,7 +685,7 @@
 
 <script type="text/javascript">
   // var handler = Gmaps.build('Google');
-  var handler = Gmaps.build('Google', {markers:
+ /* var handler = Gmaps.build('Google', {markers:
     {clusterer: {
       gridSize: 100,
       maxZoom: 12
@@ -685,7 +695,7 @@
       ]);
 
     handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
+    handler.fitMapToBounds();*/
 
     // handler.bounds.extendWith(markers);
     // //handler.fitMapToBounds();
