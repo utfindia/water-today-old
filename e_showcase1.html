@@ -250,12 +250,13 @@
 }
 
 .xzoom-container img, .xzoom-gallery img {
-  -webkit-transition: all ease .04s;
+  -webkit-transition: all  .04s ease;
 
 }
 
 .xzoom-container img:hover, .xzoom-gallery img:hover  {
-  transform: scale(1.2);
+  -webkit-transition: all .04s ease;
+  -webkit-transform: scale(1.2);
 }
 
 
@@ -690,7 +691,7 @@
 
 <script type="text/javascript">
   // var handler = Gmaps.build('Google');
- /* var handler = Gmaps.build('Google', {markers:
+  var handler = Gmaps.build('Google', {markers:
     {clusterer: {
       gridSize: 100,
       maxZoom: 12
@@ -700,7 +701,7 @@
       ]);
 
     handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();*/
+    handler.fitMapToBounds();
 
     // handler.bounds.extendWith(markers);
     // //handler.fitMapToBounds();
